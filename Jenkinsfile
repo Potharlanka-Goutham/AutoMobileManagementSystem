@@ -13,7 +13,7 @@ pipeline {
         stage('Build docker image') {
             steps {
                 script {
-                    bat 'docker build -t potharlankagoutham08/devops-integration .'
+                    bat 'docker build -t potharlankagoutham08/AutoMobileManagementSystem .'
                 }
             }
         }
@@ -21,7 +21,7 @@ pipeline {
             steps {
                 script {
                     bat 'docker login -u potharlankagoutham08 -p Gouthamrebel@2004 '
-                    bat 'docker push potharlankagoutham08/devops-integration'
+                    bat 'docker push potharlankagoutham08/AutoMobileManagementSystem'
                 }
             }
         }
